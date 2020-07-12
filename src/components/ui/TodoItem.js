@@ -6,21 +6,19 @@ export default function TodoItem(props) {
     const { data, changeStatus } = props;
     const handleChange = (checked) => changeStatus(data.id, checked);
     const className = 'todo-item ui-state-default ' + (data.completed === true ? 'completed' : 'pending');
+    // const {props.map(...data)};
+    // console.log(data);
+    // console.log(props);
 
     return (
-        <li className={className}>
-            <div className="checkbox">
-                <label >
-                    <CheckBox checked={data.completed} onChange={handleChange} />
-                    <div className="rowitem">
-                        <span className="username">{data.userName}</span>
-                        <span className="date">{data.creationDate}</span>
-                        <span className="email">{data.email}</span>
-                        <span className="tel">{data.telephone}</span>
-                        {/* <CRUDAction className="filter"/> */}
-                    </div>
-                </label>
+        <div className={className}>
+            <div className="rowitem">
+                <td><CheckBox checked={data.completed} onChange={handleChange} /></td>
+                <td className="item">{data.userName}</td>
+                <td className="item">{data.creationDate}</td>
+                <td className="item">{data.email}</td>
+                <td className="item">{data.telephone}</td>
             </div>
-        </li>
+        </div>
     );
 }

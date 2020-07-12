@@ -10,73 +10,52 @@ body {
 .todostitlestack {
     background-color: #f2f2f2;
     padding-right: 10px;
-    margin: -8px -1px 10px 0px;
-    width: 970px;
-    /* width: 113.5%; */
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    /* position: relative; */
-    text-align: right;
-}
-
-.todostitle {
-    direction: rtl;
-}
-
-.checkbox{
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
     text-align: right;
     direction: rtl;
-    padding-right: 10px;
 }
 
 .rowitem{
-    margin-right: 12px;
-    margin-left: 80px;
     text-align: right;
     direction: rtl;
+    padding: 10px 10px 10px 0px;
+    border-bottom: 1px solid #ddd;
 }
 
-.username{
-    margin-right: 12px;
-    margin-left: 90px;
-    text-align: right;
-    direction: rtl;
-}
-
-.tel{
-    margin-right: 20px;
-    margin-left: 50px;
-}
-
-.email{
-    /* width: 130; */
-    margin-right: 15px;
-    margin-left: 90px;
+.item{
+    padding: 3px 20px 0 8px;
+    width: 180px;
+    max-width: 180px;
+    overflow: hidden;
+    /* display: inline-block; */
+    /* white-space: nowrap; */
 }
 
 .filter{
-    /* width: 130; */
     margin-right: -15px;
     margin-left: -90px;
 }
 
-.firstrow{
-    margin-right: 10px;
-    margin-left: 100px;
-}
-
 .datetitle{
     margin-right: 90px;
-    margin-left: 100px;
+    text-align: right;
+    direction: rtl;
+    width: 244px;
+}
+
+.table {
+    width: '70%';
 }
 
 .todolist {
     background-color: #FFF;
-    width: 970;
+    width: '70%';
     margin: 30px auto;
     border: 1px solid #ddd;
     border-radius: 3px;
-    position: relative;
+    position: absolute;
     text-align: right;
 }
 
@@ -209,6 +188,8 @@ footer .buttons {
     display: inline-block;
     padding: 4px;
     color: white;
+    top: -3px;
+    position: relative;
 }
 
 .buttons .search {

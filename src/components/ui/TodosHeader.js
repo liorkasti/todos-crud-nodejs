@@ -7,17 +7,16 @@ export default function TodosHeader(props) {
     // const className = 'todo-item ui-state-default ' + (data.completed === true ? 'completed' : 'pending');
 
     return (
-        <div className="pull-right" >
-            <div className="todostitlestack">                
-                <label className="todostitle" >
-                    <CheckBox />
-                    <span className="firstrow">שם משתמש</span>
-                    <span className="firstrow">טלפון</span>
-                    <span className="firstrow">מייל</span>
-                    <span className="datetitle">תאריך יצירת משימה</span>
-                    <span className="firstrow">פעולות</span>
-                </label>
-
+        <div  >
+            <div className="todostitlestack">
+                <div>
+                    <td><CheckBox /></td>
+                    <td className="item"><label>שם משתמש</label></td>
+                    <td className="item"><label>טלפון</label></td>
+                    <td className="item"><label>מייל</label></td>
+                    <td className="item"><label>תאריך יצירת משימה</label></td>
+                    <td className="item"><label>פעולות</label></td>
+                </div>
             </div>
         </div>
     );
