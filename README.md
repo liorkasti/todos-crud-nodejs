@@ -1,1 +1,3 @@
-autor: kasti_one
+yarn install
+
+yarn start
