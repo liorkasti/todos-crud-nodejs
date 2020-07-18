@@ -17,7 +17,7 @@ body {
 
 .header{
     position: absolute;
-    width: 97%;
+    width: 100%;
     margin-top: 20px;}
 
 .title{
@@ -67,7 +67,7 @@ body {
     background-color: #FFF;
     position: absolute;
     top: 180px;
-    width: 97%;
+    width: 100%;
     /* margin: 30px auto; */
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -91,11 +91,6 @@ body {
     right: 0;
     color: #999;
     text-align: center;
-}
-
-.infostack {
-    position: relative;
-    margin-top: "10%";
 }
 
 .form-control {
@@ -122,7 +117,7 @@ li.completed label {
     /* border-top: 1px solid #ddd; */
     /* background-color: #F4FCE8; */
     top: 150px;;
-    margin: 0 -20px -10px -20px;
+    margin: 0 -50px -10px -24px;
     padding: 12px 20px;
     position: relative;
     color: #777;
@@ -131,7 +126,7 @@ li.completed label {
 footer {
     /* border-top: 1px solid #ddd; */
     /* background-color: #F4FCE8; */
-    margin: 0 -20px -10px -20px;
+    margin: -5px -10px -10px -10px;
     padding: 12px 20px;
     position: relative;
     color: #777;
@@ -221,13 +216,31 @@ footer .buttons {
     position: relative;
 }
 
+.buttons .button:hover, .buttons .button.selected {
+    opacity: 1;
+    border-color: #ddd;
+}
+
 .buttons .add {
-    background: url(../images/add.svg) no-repeat center;
+    background: url(../icons/add.svg) no-repeat center;
 }
 
 .buttons .search {
-    background: url(../images/search.svg) no-repeat center;
+    background: url(../icons/search.svg) no-repeat center;
 }
+/* 
+.edit {
+    background: url(../icons/search.png) no-repeat center;
+}
+
+.read {
+    background: url(../icons/search.png) no-repeat center;
+}
+
+.remove {
+    background: url(../icons/search.png) no-repeat center;
+} 
+*/
 
 .alert.alert-info {
     margin: 10px 0;
@@ -237,3 +250,24 @@ footer .buttons {
     border: 1px solid rgba(229, 229, 229, 0.5);
     color: #888;
 }
+
+/* 
+.buttons .add {
+    background: url(../icons/add.svg) no-repeat center;
+}
+
+.buttons .search {
+    background: url(../icons/search.svg) no-repeat center;
+}
+
+.buttons .edit {
+    background: url(../icons/search.png) no-repeat center;
+}
+
+.buttons .read {
+    background: url(../icons/search.png) no-repeat center;
+}
+
+.buttons .remove {
+    background: url(../icons/search.png) no-repeat center;
+} */

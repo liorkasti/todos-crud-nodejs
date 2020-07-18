@@ -18,7 +18,7 @@ export default function Footer(props) {
             <div className="pull-right">
                 <Filter {...{filter, changeFilter}}/>
             </div>
-            <div className="infostack">
+            <div>
                 <Info {...{ mode }} />
             </div>
         </footer>

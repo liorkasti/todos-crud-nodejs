@@ -25,8 +25,6 @@ export default function TodoList(props) {
                 <FilteredList {...{ items, changeStatus }} />
                 <Footer {...{ count, filter, changeFilter, mode, changeMode }} />
             </div>
-            
-
         </div>
     );
 }
