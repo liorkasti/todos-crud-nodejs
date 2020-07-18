@@ -3,7 +3,7 @@ import InputWrapper from './InputWrapper';
 
 export default function Header(props) {
     return (
-        <header>
+        <header className="header">
             <div className="pull-right">
                 <h1 className="title">ניהול משימות</h1>
             </div>

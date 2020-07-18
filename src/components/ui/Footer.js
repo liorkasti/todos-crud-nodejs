@@ -1,21 +1,25 @@
 import React from 'react';
 import Filter from './Filter';
-import ButtonWrapper from './ButtonWrapper';
+import Info from './Info';
+import FooterWrapper from './FooterWrapper';
 
 export default function Footer(props) {
-    const { count, filter, changeFilter } = props;
+    const {mode, count, filter, changeFilter} = props;
 
     return (
         <footer className="clearfix">
-            <div className="pull-left buttons">            
-                <ButtonWrapper {...props} />
+            <div className="pull-left buttons">
+                <FooterWrapper{...props}/>
             </div>
 
             <div className="pull-left">
-                <Filter {...{ filter, changeFilter }} />
+                {`${count} items left`}
             </div>
             <div className="pull-right">
-                {`(${count}) רשימת הלקוחות שלך`}
+                <Filter {...{filter, changeFilter}}/>
+            </div>
+            <div className="infostack">
+                <Info {...{ mode }} />
             </div>
         </footer>
     );
