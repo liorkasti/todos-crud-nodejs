@@ -31,7 +31,7 @@ class InputBox extends React.Component {
                 value={this.state.value}
                 onKeyUp={this.handleKeyUp.bind(this)}
                 onChange={this.handleChange.bind(this)}
-                placeholder="חיפוש משימה"
+                placeholder=" הוספת משימה חדשה..."
             />
         );
     }

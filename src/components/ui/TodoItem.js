@@ -18,6 +18,7 @@ export default function TodoItem(props) {
                 <td className="item">{data.creationDate}</td>
                 <td className="item">{data.email}</td>
                 <td className="item">{data.telephone}</td>
+                <td className="item">actions</td>
             </div>
         </div>
     );

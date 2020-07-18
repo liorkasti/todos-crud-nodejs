@@ -17,18 +17,16 @@ export default function TodoList(props) {
     // console.log(list);
 
     return (
-        <div className="container">
-            <div className="row">
+            <div className="container">
                 <Header {...{ addNew, mode, query, setSearchQuery }} />
                 <Footer {...{ count, filter, changeFilter, mode, changeMode }} />
                 <div className="todolist">
-                    <tbody className="table">
-                        <tr ><TodosHeader {...{ items, changeStatus }} /></tr>
-                        <tr><FilteredList {...{ items, changeStatus }} /></tr>
-                    </tbody>
+                    {/* <tbody> */}
+                        <TodosHeader {...{ items, changeStatus }} />
+                        <FilteredList {...{ items, changeStatus }} />
+                    {/* </tbody> */}
                     <Info {...{ mode }} />
                 </div>
-            </div>
         </div>
     );
 }

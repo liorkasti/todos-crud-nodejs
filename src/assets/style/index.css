@@ -1,5 +1,5 @@
 body {
-    background-color: #eee;
+    background-color: #f9f9f9;
     color: #555;
 }
 
@@ -12,12 +12,14 @@ body {
     padding-right: 10px;
     padding: 8px;
     border-bottom: 1px solid #ddd;
-    position: relative;
+    /* position: relative; */
     text-align: right;
     direction: rtl;
 }
 
 .rowitem{
+    /* position: relative;
+    width: 'auto'; */
     text-align: right;
     direction: rtl;
     padding: 10px 10px 10px 0px;
@@ -35,7 +37,7 @@ body {
 
 .filter{
     margin-right: -15px;
-    margin-left: -90px;
+    /* margin-left: -90px; */
 }
 
 .datetitle{
@@ -45,17 +47,23 @@ body {
     width: 244px;
 }
 
-.table {
-    width: '70%';
+.container {
+    /* width: 70%; */
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    height: 16px;
+    margin: auto;
+    text-align: center;
+
 }
 
 .todolist {
     background-color: #FFF;
-    width: '70%';
     margin: 30px auto;
     border: 1px solid #ddd;
     border-radius: 3px;
-    position: absolute;
+    /* position: absolute; */
     text-align: right;
 }
 
@@ -67,8 +75,8 @@ body {
 }
 
 .todolist .info {
-    position: absolute;
-    margin-top: 20px;
+    /* position: absolute; */
+    /* margin-top: 20px; */
     left: 0;
     right: 0;
     color: #999;

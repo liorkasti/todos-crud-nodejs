@@ -8,7 +8,7 @@ export function getAll() {
     return [
         {
             id: 1,
-            text: 'Learn Javascript',
+            text: 'Javascript',
             completed: false,
             userName: '1שם משתמש',
             telephone: '0526589595',
@@ -17,7 +17,7 @@ export function getAll() {
         },
         {
             id: 2,
-            text: 'Learn React',
+            text: 'React',
             completed: false,
             userName: '2שם משתמש',
             telephone: '0526589595',
@@ -26,7 +26,7 @@ export function getAll() {
         },
         {
             id: 3,
-            text: 'Build a React App',
+            text: 'React App',
             completed: false,
             userName: '3שם משתמש',
             telephone: '0526589595',
