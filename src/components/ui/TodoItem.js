@@ -1,8 +1,9 @@
 import React from 'react';
 import CheckBox from './CheckBox';
-import Filter from './Filter';
+import ActionWrapper from './ActionWrapper';
 
 export default function TodoItem(props) {
+    // const {mode, count, filter, changeFilter} = props.actions;
     const { data, changeStatus } = props;
     const handleChange = (checked) => changeStatus(data.id, checked);
     const className = 'todo-item ui-state-default ' + (data.completed === true ? 'completed' : 'pending');
@@ -19,6 +20,7 @@ export default function TodoItem(props) {
                 <td className="item">{data.email}</td>
                 <td className="item">{data.telephone}</td>
                 <td className="item">actions</td>
+                {/* <td className="item"><ActionWrapper /></td> */}
             </div>
         </div>
     );

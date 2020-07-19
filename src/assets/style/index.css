@@ -228,19 +228,25 @@ footer .buttons {
 .buttons .search {
     background: url(../icons/search.svg) no-repeat center;
 }
-/* 
-.edit {
-    background: url(../icons/search.png) no-repeat center;
+
+.buttons .edit {
+    background: url(../icons/edit.png) no-repeat center;
+    height: 'auto';
+    width: 'auto';
 }
 
-.read {
-    background: url(../icons/search.png) no-repeat center;
+.buttons .inspect {
+    background: url(../icons/inspect.png) no-repeat center;
+    height: 'auto';
+    width: 'auto';
 }
 
-.remove {
-    background: url(../icons/search.png) no-repeat center;
+.buttons .remove {
+    background: url(../icons/remove.png) no-repeat center;
+    height: 'auto';
+    width: 'auto';
 } 
-*/
+
 
 .alert.alert-info {
     margin: 10px 0;

@@ -6,6 +6,7 @@ import FilterBar from './FilterBar';
 import FilteredList from './FilteredList';
 import TodosHeader from './TodosHeader';
 import { applyFilter, search } from '../../services/filter';
+// import { applyFilter, search } from '../../services/filter';
 
 export default function TodoList(props) {
     const { list, filter, mode, query, } = props.data;

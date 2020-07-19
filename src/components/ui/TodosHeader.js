@@ -8,16 +8,14 @@ export default function TodosHeader(props) {
 
     return (
         <div  >
-            <div className="todostitlestack">
-                <div>
+            <table className="todostitlestack">
                     <td><CheckBox /></td>
                     <td className="item"><label>שם משתמש</label></td>
                     <td className="item"><label>טלפון</label></td>
                     <td className="item"><label>מייל</label></td>
                     <td className="item"><label>תאריך יצירת משימה</label></td>
                     <td className="item"><label>פעולות</label></td>
-                </div>
-            </div>
+            </table>
         </div>
     );
 }
